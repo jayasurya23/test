@@ -61,6 +61,8 @@ def update(id):
     else:
         return render_template('update.html', task=task)
 
-
+@app.route('/test/', methods=['GET', 'POST'])
+def test():
+    pass
 if __name__ == "__main__":
     app.run(debug=True)
